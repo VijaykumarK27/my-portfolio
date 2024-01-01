@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { techStack } from "../constants";
+import { aboutMe, techStack } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 
@@ -30,14 +30,7 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              I'm a self-taught web developer with
-              experience in designing new features from ideation to production,
-              implementation of wireframes and design flows into high
-              performance software applications. I take into consideration the
-              user experience while writing reusable and efficient code. I
-              passionately combine good design, technology, and innovation in
-              all my projects, which I like to accompany from the first idea to
-              release.Currently, I'm focused on the backend development.
+             {aboutMe.aBitAboutMe}
             </p>
           </motion.div>
           <motion.div
@@ -52,9 +45,7 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              Using a combination of cutting-edge technologies and reliable
-              open-source software I build user-focused, performant apps and
-              websites for smartphones, tablets, and desktops.
+             {aboutMe.technologiesAndTools}
             </p>
           </motion.div>
           <motion.div className="flex flex-wrap mt-8 flex flex-wrap justify-between ">

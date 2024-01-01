@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
-import { contactLinks } from "../constants";
+import { aboutMe, contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 import cloud from "../assets/cloudBg.png";
@@ -14,12 +14,12 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Veeresh Portfolio</title>
-        <meta name="description" content="Veeresh Portfolio" />
+        <title>{aboutMe.name} Portfolio</title>
+        <meta name="description" content="Vijaykumar Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
-          content="Veeresh Portfolio , Veeresh , Veeresh R M , VeereshRM , veereshrm , veeresh r m, developer , web developer , veeresh developer , veereshrm developer , veeresh r m developer , veeresh web developer , veereshrm web developer ,  veeresh r m web developer"
+          content="Vijaykumar Portfolio , Vijaykumar , Vijaykumar Kadappagol , VijaykumarKadappagol , VijaykumarKadappagol , Vijaykumar Kadappagol, developer , web developer , vijaykumar developer , VijaykumarKadappagol developer , Vijaykumar Kadappagol developer , vijaykumar web developer , VijaykumarKadappagol web developer ,  Vijaykumar Kadappagol web developer"
         />
       </Helmet>
       <div
@@ -34,7 +34,7 @@ const Home = () => {
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <motion.span className={darkMode ? "block text-black" : " text-white"}>
-                Hi, I am Veeresh
+                Hi, I am {aboutMe.name}
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
                 <Typical
@@ -49,9 +49,9 @@ const Home = () => {
                   ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }>
-              I'm 4th year B.Tech student, Front-End / Full-Stack Developer. Currently working at
-              Omikron Technologies as a Web Developer intern. Looking for opportunities to grow and
-              learn.
+              {
+                aboutMe.description
+              }
             </p>
             <div className="flex md:justify-start gap-2 ">
               {contactLinks.map((el) => (
@@ -67,7 +67,7 @@ const Home = () => {
               ))}
             </div>
             <a
-              href="https://drive.google.com/file/d/1KcI10EsQhPtieL0Q67B70WAuNkohhnYS/view"
+              href={aboutMe.resumeLink}
               target="_blank"
               rel="noreferrer">
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

@@ -4,8 +4,6 @@ export const techStack = [
     link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
   },
   { name: "Next", link: "https://cdn.cdnlogo.com/logos/n/80/next-js.svg" },
-  //{ name: "C Language", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" },
-  //{ name: "Java", link: "https://cdn.cdnlogo.com/logos/j/2/java.svg" },
   {
     name: "MySQl",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
@@ -55,18 +53,23 @@ export const contactLinks = [
   {
     name: "Instagram",
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png",
-    link: "https://www.instagram.com/_veeresh_27/",
+    link: "https://www.instagram.com/vijay.k_27/",
   },
   {
     name: "Github",
     url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-    link: "https://github.com/veeresh-27",
+    link: "https://github.com/VijaykumarK27",
   },
   {
     name: "LinkedIn",
     url: "https://pngimg.com/uploads/linkedIn/linkedIn_PNG26.png",
-    link: "https://www.linkedin.com/in/veeresh-r-m",
+    link: "https://www.linkedin.com/in/vijaykumar-kadappagol-90a434295",
   },
+  {
+    name: "Resume",
+    url:'',
+    link:'https://drive.google.com/file/d/1LbeEch0_5SO8uVTiZbk6CPbmoyvWgbqx/view?usp=drive_link',
+  }
 ];
 
 export const serviceData = [
@@ -79,67 +82,34 @@ export const serviceData = [
 
 export const projects = [
   {
-    link: "https://ishwarpatil.com",
-    img: "https://postimg.cc/9rw7gKMC",
-    desc: "Freelance Project | Interactive and responsive website | Automated Emailing (sendinblue api) | Tech Stack: TailwindCSS, NextJS, Vercel",
-    source: "https://github.com/veeresh-27/businessProfile",
-  },
-  {
-    link: "https://bingemovies.netlify.app/",
-    img: "https://i.postimg.cc/TPYBYpZY/Screenshot-52.png",
-    desc: "Interactive and responsive PWA API integration, SEO optimized Tech Stack: React.js, TMDb, MUI, Netlify ",
-    source: "https://github.com/veeresh-27/auth",
-  },
-
-  {
-    link: "https://linkedin-clone-6ce1f.web.app/",
-    img: "https://i.postimg.cc/rsYJ8pX3/Screenshot-46.png",
-    title: "LinkedIn Clone",
-    desc: "Website created to authenticate users. A user can create a post and read the posts created by other users which lookslike linkedIn. React.js, Firebase, MUI.",
-    source: "https://github.com/veeresh-27/linkedin-clone",
-  },
-  {
-    img: "https://i.postimg.cc/bY6L0mDg/Screenshot-47.png",
-    title: "Shmart",
-    desc: "Interactive and responsive E-commerce Web App.Google authentication, API intgreation.React.js, Firebase",
-    link: "https://shmart-369a9.web.app/",
-    source: "https://github.com/veeresh-27/shmart",
-  },
-  {
-    img: "https://i.postimg.cc/yYkjL00H/Screenshot-48.png",
-    title: "CarPrice Predictor",
-    desc: "A web application that predicts the resale price of a car based on the features of the car",
-    link: "https://veer-ml-lr.herokuapp.com/",
-    source: "https://github.com/veeresh-27/ml_lr",
-  },
-  {
-    img: "https://i.postimg.cc/50ggR3Px/Screenshot-41.png",
-    title: "B-Link",
-    link: "https://benz-hackathon.vercel.app/",
-    desc: "NextJS project created for a benz-hackathon on HakerEarth website.",
+    link: "",
+    img: "",
+    desc: "",
     source: "",
-  },
-
-  {
-    img: "https://i.postimg.cc/fTpKpkv0/Screenshot-49.png",
-    title: "Portfolio",
-    source: "https://github.com/veeresh-27/my-portfolio",
-    desc: "Interactive and responsive Web App Dark mode toggle.React.js, Tailwind CSS, Netlify, Framer Motions",
-    link: "https://veeresh-portfolio.netlify.app/",
-  },
+  },  
 ];
 
 export const personalInfo = [
   {
     title: "Phone",
-    val: "+91 9632839734",
+    val: "+91 7829448150",
   },
   {
     title: "Email",
-    val: "veereshrm789@gmail.com",
+    val: "vijaykumar.kadappagol2001@gmail.com",
   },
   {
     title: "Address",
-    val: "K R PURAM, BENGALURU INDIA",
+    val: "Marathalli, BENGALURU INDIA",
   },
 ];
+
+export const aboutMe =  {
+  fullName: 'Vijaykumar Kadappagol',
+  name: 'Vijaykumar',
+  description:'',
+  resumeLink:'https://drive.google.com/file/d/1LbeEch0_5SO8uVTiZbk6CPbmoyvWgbqx/view?usp=drive_link',
+  aBitAboutMe:'',
+  technologiesAndTools:'',
+}
+

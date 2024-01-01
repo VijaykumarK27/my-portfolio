@@ -1,21 +1,6 @@
 import React, { useContext } from "react";
-import { contactLinks } from "../constants";
+import { aboutMe, contactLinks, personalInfo } from "../constants";
 import { ThemeContext } from "../themeProvider";
-
-const personalInfo = [
-  {
-    title: "Phone",
-    val: "+91 9632839734",
-  },
-  {
-    title: "Email",
-    val: "veereshrm789@gmail.com",
-  },
-  {
-    title: "Address",
-    val: "K R PURAM, BENGALURU INDIA",
-  },
-];
 
 const Contact = () => {
   const theme = useContext(ThemeContext);
@@ -30,83 +15,8 @@ const Contact = () => {
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center z-0">Contact</h2>
         <div>
           <h4 className="mt-12 text-3xl font-semibold text-blue-500">Connect with me</h4>
-          {/* <p className="text-gray-500 text-xl">
-            If you want to know more about me or my work, or if you would just
-            <br />
-            like to say hello, send me a message. I'd love to hear from you.
-          </p> */}
         </div>
-        <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-24">
-          {/* <div className="w-full md:pr-8">
-            <form>
-              <div class="my-6">
-                <label
-                  for="name"
-                  class={
-                    darkMode
-                      ? "block mb-2 text-lg font-medium text-gray-900"
-                      : "block mb-2 text-lg font-medium text-white"
-                  }
-                >
-                  Name
-                </label>
-                <input
-                  type="email"
-                  id="name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  for="email"
-                  class={
-                    darkMode
-                      ? "block mb-2 text-lg font-medium text-gray-900"
-                      : "block mb-2 text-lg font-medium text-white"
-                  }
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  for="message"
-                  class={
-                    darkMode
-                      ? "block mb-2 text-lg font-medium text-gray-900"
-                      : "block mb-2 text-lg font-medium text-white"
-                  }
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 h-28 w-full text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Enter your message"
-                  required
-                />
-              </div>
-              <div className="flex justify-between ">
-                <div className="underline">
-                  <a href="mailto:veereshrm789@gmail.com">
-                    Send me email directly
-                  </a>
-                </div>
-                <button className="bg-indigo-500 text-white px-4 py-2 w-40 rounded-md hover:bg-indigo-400">
-                  <a href="mailto:aakash.sh858791@gmail.com">Submit</a>
-                </button>
-              </div>
-            </form>
-          </div> */}
+        <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-24">          
           <div className="w-full flex mt-12 md:mt-6 flex-wrap gap-10 justify-evenly">
             {personalInfo.map(({ title, val }, index) => (
               <div key={index} className="flex flex-col w-full md:w-max mt-12 md:mt-6 ">
@@ -143,7 +53,7 @@ const Contact = () => {
         }>
         Made with
         <div className="text-red-500 px-2 text-2xl">&#10084;</div>
-        by Veeresh
+        by {aboutMe.name}
       </div>
     </div>
   );
